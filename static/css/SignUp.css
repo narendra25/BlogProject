@@ -1,0 +1,13 @@
+body {
+   background-image: url('../images/7.jpg');
+   background-size: 100%;
+}
+.img-thumbnail {
+    /*padding: 2.25rem;*/ 
+    /* background-color: #fff; */
+    /* border: 1px solid #dee2e6; */
+    border-color: black;
+    border-radius: 21.25rem;
+    max-width: 100%;
+    height: auto;
+}
