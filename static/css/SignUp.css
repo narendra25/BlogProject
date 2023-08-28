@@ -6,8 +6,14 @@ body {
     /*padding: 2.25rem;*/ 
     /* background-color: #fff; */
     /* border: 1px solid #dee2e6; */
-    border-color: black;
+    background-color: black;
+    border-color: green;
     border-radius: 21.25rem;
     max-width: 100%;
     height: auto;
+}
+
+p{
+    color:white;
+    font-size: large;
 }

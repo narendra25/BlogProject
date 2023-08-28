@@ -17,39 +17,30 @@
       crossorigin="anonymous"
     />
 
-    <title>SignUp Page</title>
-    <link rel="stylesheet" href="{% static 'css/SignUp.css'%}" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{% static 'css/Login.css'%}" />
   </head>
   <body>
     <div class="container mt-3">
       <div class="row">
         <div class="col-md-6">
           <img
-            src="{% static 'images/9.jpg'%}"
+            src="{% static 'images/4.jpg'%}"
             alt="..."
             class="img-thumbnail"
           />
         </div>
         
         <div class="col-md-4">
-          <h2 class="text-white text-center">SignUp Here</h2>
-          <form action="/signup" method="post"> {% csrf_token %}
-            <label class="text-white">UserName</label>
+          <h2 class="text-white text-center">Login</h2>
+          <form action="/login" method="post">
+            <label class="text-white">UserName (or) Email</label>
             <div class="form-group">
               <input
                 type="text"
                 class="form-control"
                 name="username"
                 required
-              />
-            </div>
-            <label class="text-white mt-2">Email</label>
-            <div class="form-group">
-              <input 
-              type="email" 
-              class="form-control" 
-              name="email" 
-              required 
               />
             </div>
             <label class="text-white mt-2">Password</label>
@@ -61,22 +52,13 @@
                 required
               />
             </div>
-            <label class="text-white mt-2">Confirm Password</label>
-            <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                name="confirmpassword"
-                required
-              />
-            </div>
             <div class="d-grid gap-2 mt-2">
               <label class="d-grid gap-2 mt-2">
-                <button class="btn btn-light" type="submit">SignIn</button>
+                <button class="btn btn-light" type="submit">LogIn</button>
               </label>
             </div>
           </form>
-         <p> Already User?<a href="/login">Login</a></p>
+         <p> New User?<a href="/signup">SignUp</a></p>
         </div>
       </div>
     </div>

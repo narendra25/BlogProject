@@ -4,5 +4,6 @@ from django.urls import path
 from authapp import views
 
 urlpatterns = [
-    path('signup/',views.SignUp_View)
+    path('signup/',views.SignUp_View,name='signup'),
+    path('login/',views.Login_View,name='login')
 ]

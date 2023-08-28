@@ -1,0 +1,19 @@
+body {
+    background-image: url('../images/5.jpg');
+    background-size: 100%;
+ }
+ .img-thumbnail {
+     /*padding: 2.25rem;*/ 
+     /* background-color: #fff; */
+     /* border: 1px solid #dee2e6; */
+     background-color: black;
+     border-color: green;
+     border-radius: 21.25rem;
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ p{
+     color:white;
+     font-size: large;
+ }
