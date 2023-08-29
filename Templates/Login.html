@@ -18,14 +18,14 @@
     />
 
     <title>Login Page</title>
-    <link rel="stylesheet" href="{% static 'css/Login.css'%}" />
+    <link rel="stylesheet" href="{% static 'assets/css/Login.css'%}" />
   </head>
   <body>
     <div class="container mt-3">
       <div class="row">
         <div class="col-md-6">
           <img
-            src="{% static 'images/4.jpg'%}"
+            src="{% static 'assets/img/11.jpg'%}"
             alt="..."
             class="img-thumbnail"
           />
@@ -41,7 +41,7 @@
             </button>
           </div>
           {% endfor %}
-          <form action="/login" method="post">
+          <form action="/login/" method="post">{% csrf_token %}
             <label class="text-white">UserName (or) Email</label>
             <div class="form-group">
               <input
@@ -62,7 +62,7 @@
             </div>
             <div class="d-grid gap-2 mt-2">
               <label class="d-grid gap-2 mt-2">
-                <button class="btn btn-light" type="submit"><a href="/signup">LogIn</a></button>
+                <button class="btn btn-light" type="submit">LogIn</button>
               </label>
             </div>
           </form>
