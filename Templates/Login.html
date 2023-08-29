@@ -33,6 +33,14 @@
         
         <div class="col-md-4">
           <h2 class="text-white text-center">Login</h2>
+          {% for message in messages %}
+          <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+            <strong>{{ message }}</strong> 
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          {% endfor %}
           <form action="/login" method="post">
             <label class="text-white">UserName (or) Email</label>
             <div class="form-group">
@@ -54,7 +62,7 @@
             </div>
             <div class="d-grid gap-2 mt-2">
               <label class="d-grid gap-2 mt-2">
-                <button class="btn btn-light" type="submit">LogIn</button>
+                <button class="btn btn-light" type="submit"><a href="/signup">LogIn</a></button>
               </label>
             </div>
           </form>
